@@ -3,14 +3,13 @@ bl_info = {
     "author": "Daisuke Mizuma",
     "version": (0, 2),
     "blender": (2, 80, 0),
-    "location": "View3D > ToolBar",
+    "location": "View3D > Sidebar > Tools",
     "": "",
     "description": "",
     "category": "Mesh"
 }
 
 
-import re
 import bpy
 import bmesh
 from mathutils import Vector
@@ -349,6 +348,7 @@ classes = (
     POS_TO_VCOLOR_OT_PosToVColor,
     VIEW3D_PT_PosToVColorTool,
     )
+
 
 def register():
     for cls in classes:
